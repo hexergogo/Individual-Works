@@ -1,0 +1,160 @@
+{% include 'buyers/base.html' %}
+<title>确认订单</title>
+{% block content %}
+
+	<!-- Content -->
+	<div class="content-right">
+		<div class="container m-t-100 m-b-100">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-xs-center">确认订单</h1>
+
+					<div class="separator-one"></div>
+				</div>
+			</div>
+
+			<div class="row m-t-70">
+				<form action="/buyers/enterpay/" method="post">
+                {% csrf_token %}
+					<div class="col-xs-12 col-sm-6 col-md-7">
+                        	<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center" style="margin-top: 0" >你的订单</h3>
+
+								<table class="table table-hover table-condensed">
+									<tbody>
+                                    {% for data in data %}
+                                        <tr>
+											<td class="col-sm-2 hidden-xs">
+												<a  class="thumbnail m-b-0">
+													<img src="/static/{{ data.goods.goods_picture }}" alt="">
+												</a>
+											</td>
+
+											<td>{{ data.goods.goods_num }} &nbsp;x&nbsp; {{ data.goods.goods_name }}</td>
+
+											<td class="text-right">{{ data.total }}RMB</td>
+										</tr>
+                                    {% endfor %}
+
+									</tbody>
+
+									<tfoot>
+
+
+										<tr>
+											<td colspan="2" class="b-t-0 text-right"><h3 class="m-b-0">总计</h3></td>
+											<td  class="b-t-0 text-right"><h3 id="alltotal" class="m-b-0">{{ alltotal }}</h3>RMB</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center">邮寄地址</h3>
+								<div class="form-group form-group-default required">
+									<label>姓名</label>
+									<input type="text" name="name" class="form-control" required="">
+								</div>
+
+                                <div class="form-group form-group-default">
+									<label>手机号</label>
+									<input type="text" name="phone" class="form-control">
+							    </div>
+
+								<div class="form-group form-group-default required">
+									<label>详细地址（包括省/市到街道）</label>
+									<input type="text" name="address" class="form-control" required="">
+								</div>
+                            </div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-xs-t-30 m-b-30 text-xs-center">邮寄方式</h3>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label>
+											<input id="free" type="radio" name="shipping_method" class="input-radio" value="1" checked="">
+											普通快递
+										</label>
+										<label class="pull-right">免运费</label>
+									</div>
+								</div>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label>
+											<input id="sf" type="radio" name="shipping_method" class="input-radio" value="2">
+											顺丰速运
+										</label>
+										<label class="pull-right">15.00RMB</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center">支付方式</h3>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label>
+											<input type="radio" name="payment_method" value="1" checked="">
+											支付宝
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label>
+											<input type="radio" name="payment_method" value="2">
+											微信
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label>
+											<input type="radio" name="payment_method" value="3">
+											银联
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+						<div class="separator-two m-b-30"></div>
+
+						<input type="submit" class="btn btn-success" value="确认支付">
+
+						<p class="small m-t-20"><a href="/buyers/cart/"><i class="fas fa-angle-left"></i> 返回购物车</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Content -->
+
+    <script>
+        $('#sf').click(function () {
+            var alltotal= $('#alltotal').text();
+            if(alltotal >= {{ alltotal }}){
+                $('#alltotal').text(Number({{ alltotal }})+15)
+            }
+        });
+        $('#free').click(function () {
+            $('#alltotal').text({{ alltotal }})
+        })
+    </script>
+{% endblock %}

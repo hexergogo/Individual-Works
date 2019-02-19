@@ -1,0 +1,69 @@
+﻿{% include 'buyers/base.html' %}
+<title>产品列表</title>
+{% block content %}
+
+	<!-- Content -->
+	<div class="content-right">
+		<div class="container m-t-100 m-b-100">
+			<div class="row m-b-70">
+				<div class="col-sm-8">
+					<h1 class="text-xs-center">耳机列表</h1>
+				</div>
+
+				<div class="col-sm-4">
+					<h5 class="m-t-10 text-xs-center text-right text-gray">{{ type.label }}<img src="/static/buyers/img/icon-headphones.png" class="h-30 align-text-bottom m-l-20" alt="" /></h5>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="separator-one"></div>
+			</div>
+
+			<div class="row m-b-70">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="product-banner">
+						<div class="product-banner-wrapper">
+							<h2 class="text-white">{{ type.label }}</h2>
+
+							<p class="text-white m-b-30">{{ type.description }}</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+            
+			<div class="row">
+                {% for goods in data %}
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="panel">
+                            <div class="panel-body p-t-30 p-b-30 text-center">
+                                <div class="badge-sale-primary">Sale</div>
+
+                                <a href="/productsdetail/{{ goods.goods.id }}/" class="product-item">
+                                    <img style="width: 300px;height: 300px;margin:10px" src="/static/{{ goods.img }}" class="img-responsive center-block" alt="" />
+                                </a>
+
+                                <a href="/productsdetail/{{ goods.goods.id }}/">
+                                    <h5 class="m-tb-20">{{ goods.goods.goods_name }}</h5>
+                                </a>
+
+                                <h6 class="text-success">{{ goods.goods.goods_now_price }}RMB</h6>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+		</div>
+	</div>
+	<!-- Content -->
+
+{% endblock %}
+
+
+
+
+
+

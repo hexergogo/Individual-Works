@@ -1,0 +1,136 @@
+﻿{% include 'buyers/base.html' %}
+<title>购物车</title>
+{% block content %}
+
+	<!-- Content -->
+	<div class="content-right">
+		<div class="container m-t-100 m-b-100">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-xs-center">购物车</h1>
+
+					<div class="separator-one"></div>
+				</div>
+
+				<div class="col-sm-12 m-t-70">
+                {% if data %}
+					<form class="form-horizontal" method="post" action="/buyers/enterorder/">
+                    {% csrf_token %}
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th colspan="2">产品</th>
+									<th class="text-center">单价</th>
+									<th class="text-center">数量</th>
+									<th class="text-center">总计</th>
+									<th class="text-center">操作</th>
+								</tr>
+							</thead>
+
+							<tbody>
+                            {% for data in data %}
+                                <tr>
+                                    <td class="col-sm-1 hidden-xs">
+                                        <a href="/buyers/productsdetail/{{ data.goods.goods_id }}/" class="thumbnail m-b-0">
+                                            <img src="/static/{{ data.goods.goods_picture }}" alt="" />
+                                        </a>
+                                    </td>
+
+                                    <td class="col-sm-4">
+                                        <h4 class="m-b-5"><a href="/buyers/productsdetail/{{ data.goods.goods_id }}/">{{ data.goods.goods_name }}</a></h4>
+                                        <h6>{{ data.js.goods_id }}</h6>
+                                    </td>
+
+                                    <td class="col-sm-2 text-center"><strong>{{ data.goods.goods_price }}</strong>RMB</td>
+
+                                    <td class="col-sm-2 text-center">
+                                        <div class="input-group">
+                                            <span class="input-group-addon hidden-sm">
+                                                <input type="button" name="qty_minus" class="btn-qty qty_minus" value="-" data-field="quantity" />
+                                            </span>
+
+                                            <input type="text" name="quantity" class="quantity form-control text-center" value="{{ data.goods.goods_num }}" />
+
+                                            <span class="input-group-addon hidden-sm">
+                                                <input type="button" name="qty_plus" class="btn-qty qty_plus" value="+" data-field="quantity" />
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td class="col-sm-2 text-center" ><strong>{{ data.total }}</strong></td>
+
+                                    <td class="col-sm-1 text-center">
+                                        <a href="/buyers/delete_car_goods/{{ data.goods.id }}/" class="btn btn-primary btn-square btn-sm"><i class="fas fa-times"></i></a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+
+							</tbody>
+
+							<tfoot>
+								<tr>
+									<td colspan="6" class="hidden-xs">&nbsp;</td>
+								</tr>
+								<tr>
+									<td colspan="3" class="b-t-0">运费和折扣将在结账时计算。</td>
+									<td colspan="3" class="b-t-0 text-right l">总计&nbsp;<h3 class="m-b-0 alltotal">{{ alltotal }}</h3>RMB</td>
+								</tr>
+
+								<tr>
+									<td colspan="6" class="b-t-0 hidden-xs">&nbsp;</td>
+								</tr>
+
+								<tr>
+									<td colspan="3" class="b-t-0">
+										<a href="/index/" class="btn btn-default">继续购物</a>
+									</td>
+									<td colspan="3" class="b-t-0 text-right">
+										<input type="submit" class="btn btn-success" value="去结算">
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+                {% else %}
+                    <p class="b-t-0" style="margin-left:30%;color:rebeccapurple;font-weight: bolder;font-size:30px">暂无商品，请去挑选商品</p>
+                {% endif %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Content -->
+
+    <script>
+        $(function () {
+            $('.quantity').focus(function () {
+               num1 = $(this).val();
+            });
+
+            $('.quantity').blur(function () {
+                var goods_allprice = $(this).parent().parent().parent().children('td').eq(4).children('strong');
+                var goods_price = $(this).parent().parent().parent().children('td').eq(2).children('strong').text();
+                var num2 = $(this).val();
+
+                if(Number(num2) >= 1){
+                    var num = num2-num1;
+                    goods_allprice.text(Number(goods_price)*Number(num2));
+                    var newtoal = Number($('.alltotal').text())+Number(goods_price)*Number(num);
+                    $('.alltotal').text(newtoal)
+                }
+                else {
+                    num2 = $(this).val(1);
+                    var num=1-num1;
+                    goods_allprice.text(Number(goods_price));
+                    var newtoal = Number($('.alltotal').text())+Number(goods_price)*Number(num);
+                    $('.alltotal').text(newtoal)
+                }
+            })
+        })
+    </script>
+
+{% endblock %}
+
+
+
