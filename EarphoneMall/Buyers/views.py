@@ -113,7 +113,7 @@ def login(request):
         if user:
             pwd = lockpw(request.POST.get('password'))
             if pwd == user.password:
-                response = HttpResponseRedirect('/') #跳转到首页
+                response = HttpResponseRedirect('/index/') #跳转到首页
                 response.set_cookie('user_id', user.id, max_age=3600) #下发cookie
                 response.set_cookie('username', user.username, max_age=3600) #下发cookie
                 request.session['username'] = user.username #上传session
@@ -126,7 +126,7 @@ def login(request):
 
 #登出
 def logout(request):
-    response = HttpResponseRedirect("/") #登出后跳转至首页
+    response = HttpResponseRedirect('/index/') #登出后跳转至首页
     response.delete_cookie("user_id") #删除cookie
     response.delete_cookie('username')
     del request.session["username"] #删除session
@@ -139,7 +139,7 @@ def products(request,num):
         type = {'label':'全部耳机','description':'所有商品，尽情挑选，蓝牙、头戴、入耳、线材应有尽有'}
         goods = Goods.objects.all()
     else:
-        type = Types.objects.get(id=num) #取出这个类型的详情
+        type = Types.objects.filter(id=num).first() #取出这个类型的详情
         goods = Goods.objects.filter(types=num)  #取出这个类型的全部商品
     data = []
     for i in goods:
@@ -309,7 +309,7 @@ def paydata(order_num,count):
         out_trade_no=str(order_num),
         total_amount=str(count),  #将Decimal类型转换为字符串交给支付宝
         subject="商贸商城",
-        return_url='/',
+        return_url='/index/',
         notify_url=None  # 可选, 不填则使用默认notify url
     )
     return  "https://openapi.alipaydev.com/gateway.do?" + order_string
