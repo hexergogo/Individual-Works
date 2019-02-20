@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>耳机商城卖家管理后台</title>
+    <link rel="stylesheet" href="/static/shops/css/font.css">
+    <link rel="stylesheet" href="/static/shops/css/xadmin.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/shops/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/shops/js/xadmin.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="layui-anim layui-anim-up">
+    <div class="x-nav">
+      <span class="layui-breadcrumb">
+        <a href="">商品管理</a>
+        <a href="">商品列表</a>
+      </span>
+    </div>
+
+
+    <div class="x-body">
+
+        <a class="list-group-item active">商品详情<a>
+            <a class="list-group-item"><h5>商品展示:</h5>
+            {% for imgs in goodsImage %}
+               <img style="width: 200px;height: 200px;box-shadow:0 0 10px black;margin-left: 20px" src="/static/{{ imgs.img_path }}" alt="">
+            {% endfor %}
+            </a>
+            <a class="list-group-item"><h5>商品名称:</h5><h4>{{ goods.goods_name }}</h4></a>
+            <a class="list-group-item"><h5>商品编号:</h5><h4>{{ goods.goods_id }}</h4></a>
+            <a class="list-group-item"><h5>商品现价:</h5><h4>{{ goods.goods_price }}</h4></a>
+            <a class="list-group-item"><h5>商品原价:</h5><h4>{{ goods.goods_now_price }}</h4></a>
+            <a class="list-group-item"><h5>库存数量:</h5><h4>{{ goods.goods_num }}</h4></a>
+            <a class="list-group-item" style="width: 750px;margin:auto"><h5>详情:</h5><h4>{{ goods.goods_content|safe }}</h4></a>
+
+    </div>
+
+
+
+  </body>
+
+</html>

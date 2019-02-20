@@ -1,0 +1,123 @@
+{% include 'buyers/base.html' %}
+<title>确认支付</title>
+{% block content %}
+
+	<!-- Content -->
+	<div class="content-right">
+		<div class="container m-t-100 m-b-100">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-xs-center">确认订单</h1>
+
+					<div class="separator-one"></div>
+				</div>
+			</div>
+
+			<div class="row m-t-70">
+				<form>
+					<div class="col-xs-12 col-sm-6 col-md-7">
+                        	<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center" style="margin-top: 0" >你的订单</h3>
+                                <p>订单编号：<span>{{ order.order_num }}</span></p>
+								<table class="table table-hover table-condensed">
+									<tbody>
+                                    {% for goods in goods_list %}
+                                        <tr>
+											<td class="col-sm-2 hidden-xs">
+												<a  class="thumbnail m-b-0">
+													<img src="/static/{{ goods.goods.goods_picture }}" alt="">
+												</a>
+											</td>
+
+											<td>{{ goods.goods.goods_num }} &nbsp;x&nbsp; {{ goods.goods.goods_name }}</td>
+
+											<td class="text-right">{{ goods.total }}RMB</td>
+										</tr>
+                                    {% endfor %}
+
+									</tbody>
+
+									<tfoot>
+
+
+										<tr>
+											<td colspan="2" class="b-t-0 text-right"><h3 class="m-b-0">总计</h3></td>
+											<td  class="b-t-0 text-right"><h3 id="alltotal" class="m-b-0">{{ order.total }}</h3>RMB</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-xs-t-30 m-b-30 text-xs-center">邮寄方式</h3>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label style="font-weight: bolder;font-size: 18px;color: black">
+											普通快递
+										</label>
+										<label class="pull-right">免运费</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center">支付方式</h3>
+
+								<div class="form-group form-group-default">
+									<div class="radio">
+										<label style="font-weight: bolder;font-size: 18px;color: black">
+											支付宝
+										</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+                        <div class="row">
+							<div class="col-sm-12">
+								<h3 class="m-tb-30 text-xs-center">邮寄地址</h3>
+								<div class="form-group form-group-default required">
+									<label>姓名</label>
+                                    <p style="color: black" class="form-control">{{ address.username }}</p>
+								</div>
+
+                                <div class="form-group form-group-default required">
+									<label>手机号</label>
+                                    <p style="color: black" class="form-control">{{ address.phone }}</p>
+								</div>
+
+								<div class="form-group form-group-default required">
+									<label>地址</label>
+                                    <p style="color: black" class="form-control">{{ address.address }}</p>
+								</div>
+                            </div>
+						</div>
+
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+						<div class="separator-two m-b-30"></div>
+
+						<a href="/buyers/payVerify/{{ order.id }}/" class="btn btn-success"><i class="fas fa-shopping-bag"></i>&nbsp; 确认支付</a>
+
+						<p class="small m-t-20"><a href="/buyers/cart/{{ order.id }}/"><i class="fas fa-angle-left"></i> 取消支付</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Content -->
+
+{% endblock %}
