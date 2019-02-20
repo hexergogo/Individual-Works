@@ -5,6 +5,8 @@ import random,datetime,time,hashlib
 from Buyers.models import *
 from Shops.models import *
 from EarphoneMall.settings import EMAIL_HOST_USER
+from django.views.decorators.cache import cache_page
+
 
 #COOKIE验证装饰器
 def cookieVerify(fun):
@@ -26,11 +28,13 @@ def lockpw(pw):
     return result
 
 #导航页
+@cache_page(60*60)
 def daohang(request):
     return render(request,'buyers/daohang.html',locals())
 
 
 #首页
+@cache_page(60*60)
 def index(request):
     return render(request,'buyers/index.html',locals())
 
@@ -133,7 +137,9 @@ def logout(request):
     return response
 
 #商品列表
+@cache_page(60*60)
 def products(request,num):
+    print(request)
     num = int(num)
     if num == 0:
         type = {'label':'全部耳机','description':'所有商品，尽情挑选，蓝牙、头戴、入耳、线材应有尽有'}
@@ -148,6 +154,7 @@ def products(request,num):
     return render(request,'buyers/products.html',{'data':data,'type':type})
 
 #商品详情页
+@cache_page(60*60)
 def product_details(request,id):
     id = int(id)
     goods = Goods.objects.get(id=id)

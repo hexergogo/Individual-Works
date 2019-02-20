@@ -144,3 +144,10 @@ EMAIL_HOST_PASSWORD = 'perpetual.x'
 EMAIL_USE_SSL = True
 EMAIL_HOST = "smtp.163.com"
 EMAIL_PORT = 994
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',#缓存到内存
+        'LOCATION': 'DBhuancun',     #在内存中存储的变量（保证唯一）
+    }
+}

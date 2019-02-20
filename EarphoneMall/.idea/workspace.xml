@@ -55,80 +55,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Buyers/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shops/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="2919">
+              <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
               <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/product-details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
-              <folding>
-                <element signature="n#for#0;n#!!top" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/products.html">
+        <entry file="file://$PROJECT_DIR$/Shops/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="124">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/daohang.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buyers/static/buyers/css/daohang.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="136" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -204,16 +147,16 @@
         <option value="$PROJECT_DIR$/Buyers/templates/buyers/register.html" />
         <option value="$PROJECT_DIR$/Buyers/static/buyers/css/daohang.css" />
         <option value="$PROJECT_DIR$/Buyers/templates/buyers/daohang.html" />
+        <option value="$PROJECT_DIR$/Buyers/templates/buyers/products.html" />
         <option value="$PROJECT_DIR$/EarphoneMall/settings.py" />
         <option value="$PROJECT_DIR$/Buyers/views.py" />
-        <option value="$PROJECT_DIR$/Buyers/templates/buyers/products.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="566" />
-    <option name="y" value="93" />
-    <option name="width" value="1162" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="457" />
+    <option name="y" value="115" />
+    <option name="width" value="947" />
     <option name="height" value="769" />
   </component>
   <component name="ProjectView">
@@ -228,86 +171,6 @@
             <path>
               <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="buyers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="buyers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Shops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Shops" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Shops" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="shops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="buyers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="buyers" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,23 +273,22 @@
       <workItem from="1550557980071" duration="828000" />
       <workItem from="1550561005824" duration="206000" />
       <workItem from="1550561582213" duration="103000" />
-      <workItem from="1550630278463" duration="1334000" />
+      <workItem from="1550630278463" duration="8062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136982000" />
+    <option name="totallyTimeSpent" value="143710000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="true" />
+    <frame x="457" y="115" width="947" height="769" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.264938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4523044" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35849056" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3290461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,13 +312,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/core/handlers/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/csdn/csdns.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -737,16 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/product-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="n#for#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -757,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/daohang.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -778,36 +623,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shops/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="136" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buyers/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/products.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
           <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="150" column="53" selection-start-line="150" selection-start-column="53" selection-end-line="150" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buyers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2919">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/product-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="n#for#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="152" column="1" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shops/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
