@@ -3,6 +3,7 @@
 
 个人主页：www.hexu0614.com ,欢迎访问
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190220111416559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTU2MTQ3Mw==,size_16,color_FFFFFF,t_70)
 
 ### 版本信息：
 
@@ -20,8 +21,11 @@
  - 修复商城登陆后跳转导航页bug
  - 修复商城登出账户后跳转导航页bug
 
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190220111416559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTU2MTQ3Mw==,size_16,color_FFFFFF,t_70)
+#### Ver 1.3
+ - 增加Django缓存功能，大幅提升首页、商品列表和商品详情页的加载速度
+ - 修复若干bug
+ - 提高项目的稳定性
+ 
 
 如需联系，请到酷安平台联系
 
