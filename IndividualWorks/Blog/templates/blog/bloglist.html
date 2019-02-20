@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+                <ul class="cbp_tmtimeline" style="margin-top: 50px">
+                    {% for i in myblogs %}
+                        <li style="list-style: none;margin-left: 30px">
+                            <div class="cbp_tmicon"></div>
+                            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+                                <h2><a href="/blog/blogs/{{ i.id }}/" style="font-size:25px;text-decoration: none">{{ i.title }}</a></h2>
+                                <h6>
+                                    <a href="/blog/blogs/{{ i.id }}/" style="margin-left:15px;color:grey;text-decoration: none">{{ i.classify.sort }}</a>
+                                    <a href="/blog/blogs/{{ i.id }}/" style="margin-left:5px;color:grey;text-decoration: none">{{ i.time.date }}{{ i.time.hour }}{{ i.time.minute }}</a>
+                                </h6>
+                            </div>
+                            <br><br>
+                        </li>
+                    {% endfor %}
+				</ul>
+{% endblock %}

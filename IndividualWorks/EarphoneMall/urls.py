@@ -21,6 +21,8 @@ urlpatterns = [  #主路由绑定app
     path('ckeditor/',include('ckeditor_uploader.urls')),
     path('shops/',include('Shops.urls')),
     path('buyers/',include('Buyers.urls')),
+    path('blog/',include('Blog.urls')),
+
 ]
 
 urlpatterns += [  #首页与注册页路由

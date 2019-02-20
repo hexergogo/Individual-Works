@@ -28,7 +28,6 @@ def lockpw(pw):
     return result
 
 #导航页
-@cache_page(60*60)
 def daohang(request):
     return render(request,'buyers/daohang.html',locals())
 
@@ -154,7 +153,7 @@ def products(request,num):
     return render(request,'buyers/products.html',{'data':data,'type':type})
 
 #商品详情页
-@cache_page(60*60)
+# @cache_page(60*60)
 def product_details(request,id):
     id = int(id)
     goods = Goods.objects.get(id=id)

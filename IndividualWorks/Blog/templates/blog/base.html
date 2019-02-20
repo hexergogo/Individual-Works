@@ -1,0 +1,70 @@
+<!doctype html>
+{% load static %}
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link href="{% static '/blog/css/styles.css' %}" rel="stylesheet" type="text/css">
+
+
+    <script>
+
+    </script>
+
+    </head>
+
+    <body style="margin-left: 17%;width: 65%;">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/blog/">主页</a></li>
+                <li ><a  href="/blog/bloglist/">博客列表</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="wrapper">
+        <h1><a href="">个人博客</a><a hidden style="color: #69b0ff;font-size: 20px;margin-left: 30px;padding-bottom: 5px" href="/blog/addbl/">+添加博客</a></h1>
+    </div>
+
+    <div class="contentBody" >
+
+    {% block content %}
+    {% endblock %}
+
+    </div>
+
+
+
+        <div class="sidebar" >
+            <div class="sBlock">
+                <h2>最新博客</h2>
+                <ul>
+                    {% for i in blogsright %}
+                       <li><a href="/blog/blogs/{{ i.id }}/">{{ i.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="sBlock">
+                <h2>Partners</h2>
+                <ul>
+                    {% for i in blogsleft %}
+                       <li><a href="/blog/blogs/{{ i.id }}/">{{ i.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+
+    <footer>
+        <p class="copyright">
+            Copyright &copy; <a href="#">heXu'blzone</a> | Collect Form By人学物理死的早
+        </p>
+    </footer>
+
+    </body>
+</html>
