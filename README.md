@@ -4,21 +4,21 @@
 个人主页：www.hexu0614.com ,欢迎访问
 
 
-版本信息：
+### 版本信息：
 
-Ver 1.0
-商城上线
+#### Ver 1.0
+ - 商城上线
 
-Ver 1.1
-添加导航页
-增加CSDN和个人博客入口（个人博客暂未开放）
+#### Ver 1.1
+ - 添加导航页
+ - 增加CSDN和个人博客入口（个人博客暂未开放）
 
-Ver 1.2
-导航页添加github页面链接
-升级HTTP为HTTPS
-修复分类无商品404的bug
-修复商城登陆后跳转导航页bug
-修复商城登出账户后跳转导航页bug
+#### Ver 1.2
+ - 导航页添加github页面链接
+ - 升级HTTP为HTTPS
+ - 修复分类无商品404的bug
+ - 修复商城登陆后跳转导航页bug
+ - 修复商城登出账户后跳转导航页bug
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190220111416559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTU2MTQ3Mw==,size_16,color_FFFFFF,t_70)
