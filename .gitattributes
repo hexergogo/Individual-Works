@@ -1,0 +1,5 @@
+*.js linguist-language=Django
+*.css linguist-language=Django
+*.html linguist-language=Django
+*.py linguist-language=Django
+*.jpg linguist-language=Django
