@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'EarphoneMall',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': '0329',
+        'PASSWORD': 'xxxxxx',
         'HOST': 'localhost'
     }
 }
@@ -140,8 +140,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'static')
 CKEDITOR_UPLOAD_PATH = "static/upload"
 CKEDITOR_IMAGE_BACKEND = "pillow"
 
-EMAIL_HOST_USER = 'hxbcwj@163.com'
-EMAIL_HOST_PASSWORD = 'perpetual.x'
+EMAIL_HOST_USER = 'xxxxxx'
+EMAIL_HOST_PASSWORD = 'xxxxxx'
 EMAIL_USE_SSL = True
 EMAIL_HOST = "smtp.163.com"
 EMAIL_PORT = 994
