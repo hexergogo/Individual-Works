@@ -43,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Buyers/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2352">
-              <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
+            <state relative-caret-position="1219">
+              <caret line="132" column="47" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
               <folding>
                 <element signature="e#382#774#0" />
                 <element signature="e#425#757#0" />
@@ -71,10 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-              <folding>
-                <element signature="e#698#723#0#HTML" expanded="true" />
-                <element signature="e#760#867#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog/templates/blog/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -91,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog/templates/blog/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1114">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            <state relative-caret-position="189">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -100,17 +96,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog/templates/blog/bloglist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog/templates/blog/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="128" lean-forward="true" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="128" />
+            <state relative-caret-position="231">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -118,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="153" column="1" lean-forward="true" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+            <state relative-caret-position="3213">
+              <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -209,21 +205,21 @@
         <option value="$PROJECT_DIR$/EarphoneMall/urls.py" />
         <option value="$PROJECT_DIR$/Blog/models.py" />
         <option value="$PROJECT_DIR$/Blog/apps.py" />
-        <option value="$PROJECT_DIR$/Blog/templates/blog/blog.html" />
         <option value="$PROJECT_DIR$/Blog/urls.py" />
         <option value="$PROJECT_DIR$/Buyers/templates/buyers/daohang.html" />
         <option value="$PROJECT_DIR$/Blog/templates/blog/addblog.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/Blog/templates/blog/bloglist.html" />
-        <option value="$PROJECT_DIR$/Blog/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/Blog/views.py" />
-        <option value="$PROJECT_DIR$/Blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/EarphoneMall/settings.py" />
         <option value="$PROJECT_DIR$/Buyers/views.py" />
+        <option value="$PROJECT_DIR$/Blog/templates/blog/base.html" />
+        <option value="$PROJECT_DIR$/Blog/templates/blog/blog.html" />
+        <option value="$PROJECT_DIR$/Blog/templates/blog/bloglist.html" />
+        <option value="$PROJECT_DIR$/Blog/templates/blog/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="27" />
     <option name="y" value="48" />
     <option name="width" value="947" />
@@ -234,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,12 +240,26 @@
             <path>
               <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EarphoneMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EarphoneMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,23 +360,23 @@
       <workItem from="1550630278463" duration="8652000" />
       <workItem from="1550665715992" duration="5459000" />
       <workItem from="1550672154464" duration="53000" />
-      <workItem from="1550673383530" duration="502000" />
+      <workItem from="1550673383530" duration="998000" />
+      <workItem from="1550727885681" duration="471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150314000" />
+    <option name="totallyTimeSpent" value="151281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13166311" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13272922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5251572" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52411574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3290461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,13 +627,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2327880a-f511-46c1-b356-8d7263e7231c/schema/earphonemall/table/blog_sort">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2327880a-f511-46c1-b356-8d7263e7231c/schema/earphonemall/table/blog_sort" />
     <entry file="file://$PROJECT_DIR$/Buyers/templates/buyers/daohang.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -632,10 +635,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2327880a-f511-46c1-b356-8d7263e7231c/schema/earphonemall/table/blog_blogarticle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="das://2327880a-f511-46c1-b356-8d7263e7231c/schema/earphonemall/table/blog_blogarticle" />
+    <entry file="file://$PROJECT_DIR$/Buyers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="132" column="47" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
+          <folding>
+            <element signature="e#382#774#0" />
+            <element signature="e#425#757#0" />
+            <element signature="e#802#896#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -650,31 +659,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#698#723#0#HTML" expanded="true" />
-            <element signature="e#760#867#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/blog.html">
+    <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/bloglist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="128" lean-forward="true" selection-start-line="13" selection-start-column="115" selection-end-line="13" selection-end-column="128" />
+        <state relative-caret-position="3213">
+          <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -690,27 +681,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/templates/blog/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1114">
-          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        <state relative-caret-position="189">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EarphoneMall/settings.py">
+    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="153" column="1" lean-forward="true" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buyers/views.py">
+    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/bloglist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
-          <folding>
-            <element signature="e#382#774#0" />
-            <element signature="e#425#757#0" />
-            <element signature="e#802#896#0" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/templates/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>

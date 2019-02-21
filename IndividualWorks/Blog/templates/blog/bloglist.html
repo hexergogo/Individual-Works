@@ -1,6 +1,10 @@
 {% extends 'blog/base.html' %}
 {% load static %}
+{% block title %}
+    博客列表
+{% endblock %}
 {% block content %}
+
                 <ul class="cbp_tmtimeline" style="margin-top: 50px">
                     {% for i in myblogs %}
                         <li style="list-style: none;margin-left: 30px">

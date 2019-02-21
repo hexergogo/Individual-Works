@@ -5,7 +5,9 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title>{% block title %}
+    
+    {% endblock %}</title>
     <link href="{% static '/blog/css/styles.css' %}" rel="stylesheet" type="text/css">
 
 
@@ -50,7 +52,7 @@
                 </ul>
             </div>
             <div class="sBlock">
-                <h2>Partners</h2>
+                <h2>热门博客</h2>
                 <ul>
                     {% for i in blogsleft %}
                        <li><a href="/blog/blogs/{{ i.id }}/">{{ i.title }}</a></li>
@@ -62,7 +64,7 @@
 
     <footer>
         <p class="copyright">
-            Copyright &copy; <a href="#">heXu'blzone</a> | Collect Form By人学物理死的早
+            Copyright &copy; <a href="#">HeXu'blzone</a> | Collect Form By人学物理死的早
         </p>
     </footer>
 
