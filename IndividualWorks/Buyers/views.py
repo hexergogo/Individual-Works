@@ -273,7 +273,7 @@ def enterpay(request):
         order.order_num = now.strftime("%Y%m%d%H%M%S") + str(random.randint(10000, 99999)) + userId
         # 状态 未支付 1 支付成功 2 配送中 3 交易完成 4 已取消 0
         order.order_time = now
-        order.order_statue = 1
+        order.order_status = 1
         order.total = alltotal
         order.user = Buyer.objects.get(id = userId)
         order.order_address = address
