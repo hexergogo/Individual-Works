@@ -28,7 +28,7 @@ class BuyCar(models.Model):
 class Order(models.Model):
     order_num = models.CharField(max_length=32)
     order_time = models.DateTimeField(auto_now=True)
-    order_statue = models.CharField(max_length=32)
+    order_status = models.CharField(max_length=32)
     total = models.FloatField()
     user = models.ForeignKey(Buyer,on_delete=True)
     order_address = models.ForeignKey(Address,on_delete=True)
