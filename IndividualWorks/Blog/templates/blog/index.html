@@ -1,20 +1,19 @@
-{% extends 'blog/base.html' %}
+﻿{% extends 'blog/base.html' %}
 {% load static %}
+{% block title %}博客首页{% endblock %}
 {% block content %}
-{% block title %}
-    博客首页
-{% endblock %}
-<link href="{% static '/blog/css/index.css' %}" rel="stylesheet">
 
+
+<link href="{% static '/blog/css/index.css' %}" rel="stylesheet">
 
                 <ul class="cbp_tmtimeline">
                     {% for i in myblogs %}
                         <li>
                             <time class="cbp_tmtime"><span>{{ i.time.month }}-{{ i.time.day }}</span> <span>{{ i.time.year }}</span></time>
                             <div class="cbp_tmicon"></div>
-                            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+                            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" sytle="height:240px">
                                 <h2><a href="/blog/blogs/{{ i.id }}/" style="font-size:25px;text-decoration: none">{{ i.title }}</a></h2>
-                                <div style="margin-left:15px;height: 90px;overflow: hidden;margin-bottom: 20px">{{ i.body|safe }}</div>
+                                <div style="margin-left:15px;height: 170px;overflow: hidden;margin-bottom: 20px">{{ i.body|safe }}</div>
                                 <h6>
                                     <a  style="margin-left:15px;color:grey;text-decoration: none">{{ i.classify.sort }}</a>
                                     <a  style="margin-left:5px;color:grey;text-decoration: none">{{ i.time.date }}{{ i.time.hour }}</a>
@@ -23,7 +22,7 @@
                             </div>
                         </li>
                     {% endfor %}
-				</ul>
+		</ul>
 
 
 {% endblock %}

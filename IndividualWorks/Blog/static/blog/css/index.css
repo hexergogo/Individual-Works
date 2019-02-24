@@ -20,7 +20,7 @@
 .cbp_tmtimeline > li .cbp_tmtime span:first-child { font-size: 14px; color: #bdd0db; }
 .cbp_tmtimeline > li .cbp_tmtime span:last-child { font-size: 22px; color: #3594cb; }
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child { color: #6cbfee; }
-.cbp_tmtimeline > li .cbp_tmlabel { margin: 0 30px 15px 180px; background: #232323e3; color: #fff; padding: 2em; position: relative; border-radius: 5px; height: 150px; }
+.cbp_tmtimeline > li .cbp_tmlabel { margin: 0 30px 15px 180px; background: #232323e3; color: #fff; padding: 2em; position: relative; border-radius: 5px; height: 240px; }
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel { background: rgba(44,44,44,0.7); }
 .cbp_tmtimeline > li .cbp_tmlabel h2 { margin-top: 0px; padding: 0 0 10px 0; font-size: 16px; text-shadow: rgba(7, 84, 152, 0.71) 1px 1px 1px; }
 .cbp_tmtimeline > li .cbp_tmlabel:after { right: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-right-color: #3594cb; border-width: 10px; top: 10px; }
