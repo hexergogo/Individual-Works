@@ -6,6 +6,9 @@ from Buyers.models import *
 from Shops.models import *
 from EarphoneMall.settings import EMAIL_HOST_USER
 from django.views.decorators.cache import cache_page
+import random,io
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from django.http import HttpResponse
 
 
 #COOKIE验证装饰器
@@ -107,24 +110,78 @@ def register(request):
             result['data'] = '邮箱不匹配'
     return render(request, 'buyers/register.html', locals())
 
+#验证码
+def get_verify_img(request):
+    size = (150, 50)
+    width, height = size
+    font_list = list("abcdefghklmpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWSYZ0123456789")
+    c_chars = " ".join(random.sample(font_list, 5))
+    request.session['code'] = c_chars
+
+    img = Image.new("RGB", size, (255, 255, 255))
+    draw = ImageDraw.Draw(img)
+
+    for i in range(random.randint(1, 10)):
+        draw.line(
+            [
+                (random.randint(0, 150), random.randint(0, 150)),
+                (random.randint(0, 150), random.randint(0, 150))
+            ],
+            fill=(0, 0, 0)
+        )
+    for i in range(1000):
+        draw.point(
+            (random.randint(0, 150),
+             random.randint(0, 150)
+             ),
+            fill=(0, 0, 0)
+
+        )
+
+    font = ImageFont.truetype("simsun.ttc", 24)
+    draw.text((5, 5), c_chars, font=font, fill="green")
+
+    params = [1 - float(random.randint(1, 2)) / 100,
+              0,
+              0,
+              0,
+              1 - float(random.randint(1, 10)) / 100,
+              float(random.randint(1, 2)) / 500,
+              0.001,
+              float(random.randint(1, 2)) / 500
+              ]
+
+    img = img.transform(size, Image.PERSPECTIVE, params)
+    img = img.filter(ImageFilter.EDGE_ENHANCE_MORE)
+
+    buf = io.BytesIO()
+    img.save(buf, 'png')
+
+    return HttpResponse(buf.getvalue(), 'img/png')
+
 #登陆
 def login(request):
     result = {'statue': 'error', 'data': ''}
     if request.POST and request.method == 'POST':
-        email = request.POST.get('email')
-        user = Buyer.objects.filter(email=email).first()
-        if user:
-            pwd = lockpw(request.POST.get('password'))
-            if pwd == user.password:
-                response = HttpResponseRedirect('/index/') #跳转到首页
-                response.set_cookie('user_id', user.id, max_age=3600) #下发cookie
-                response.set_cookie('username', user.username, max_age=3600) #下发cookie
-                request.session['username'] = user.username #上传session
-                return response
+        user_code = str(request.POST.get('verify_code'))
+        server_code = str(request.session.get("code")).replace(' ','')
+        if user_code == server_code:
+            email = request.POST.get('email')
+            user = Buyer.objects.filter(email=email).first()
+            if user:
+                pwd = lockpw(request.POST.get('password'))
+                if pwd == user.password:
+                    response = HttpResponseRedirect('/index/') #跳转到首页
+                    response.set_cookie('user_id', user.id, max_age=3600) #下发cookie
+                    response.set_cookie('username', user.username, max_age=3600) #下发cookie
+                    request.session['username'] = user.username #上传session
+                    return response
+                else:
+                    result['data'] = '密码错误'
             else:
-                result['data'] = '密码错误'
+                result['data'] = '用户名不存在'
         else:
-            result['data'] = '用户名不存在'
+            result['data'] = '验证码错误'
     return render(request, 'buyers/login.html', locals())
 
 #登出
@@ -273,7 +330,7 @@ def enterpay(request):
         order.order_num = now.strftime("%Y%m%d%H%M%S") + str(random.randint(10000, 99999)) + userId
         # 状态 未支付 1 支付成功 2 配送中 3 交易完成 4 已取消 0
         order.order_time = now
-        order.order_status = 1
+        order.order_statue = 1
         order.total = alltotal
         order.user = Buyer.objects.get(id = userId)
         order.order_address = address
@@ -328,8 +385,3 @@ def payVerify(request,num):
     url = paydata(order_num,order_count)
     return HttpResponseRedirect(url)
 
-
-
-#404
-# def page_not_found(request):
-#     return render_to_response('buyer/404.html')
