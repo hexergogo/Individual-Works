@@ -29,6 +29,13 @@
 									<input type="password" name="password" class="form-control" required />
 								</div>
 
+                                <div class="form-group form-group-default required">
+									<label><img src="/get_verify_img/" alt="" id="code"></label>
+									<input type="text" name="verify_code" class="form-control" placeholder="请输入验证码" required />
+								</div>
+
+
+
 								<div class="form-group text-center m-t-40">
 									<input type="submit" class="btn btn-success" value="登陆">
                                     <p style="color: #447e9b">{{ result.data }}</p>
@@ -49,6 +56,12 @@
 
 	</div>
 	<!-- Content -->
+{#<script>#}
+{#    $("#code").click(function () {#}
+{#        console.log("被执行了");#}
+{#        $(this).attr("src", "/get_verify_img/");#}
+{#    })#}
+{#</script>#}
 
 
 {% endblock %}
