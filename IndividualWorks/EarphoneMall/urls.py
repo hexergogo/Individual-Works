@@ -32,6 +32,7 @@ urlpatterns += [  #首页与注册页路由
     path('loginout/', logout),
     path('reg/', register),
     path('sendMessage/', sendMessage),
+    path('get_verify_img/',get_verify_img)
 ]
 
 urlpatterns += [   #商品路由
